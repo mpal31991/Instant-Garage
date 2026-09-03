@@ -151,6 +151,14 @@ Jetpack Compose UI
 
 
 
+## Demo Video
+
+A short demonstration of the Instant Garage application is available below.
+
+[▶ Watch the Demo Video](https://drive.google.com/file/d/1QYK5M27ewvWnWTPU95xGts3ErD1QzYBr/view?usp=drivesdk)
+
+
+
 ## Assumptions & Additional Features
 
 ### Assumptions
