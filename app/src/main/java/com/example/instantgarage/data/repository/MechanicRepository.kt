@@ -22,7 +22,7 @@ class MechanicRepository @Inject constructor(
                 }
             } else {
                 Result.failure(
-                    Exception("HTTP Error: ${response.code()}")
+                    Exception("HTTP Error: ${response.code()} ${response.message()}")
                 )
             }
 
@@ -41,7 +41,9 @@ class MechanicRepository @Inject constructor(
                 if (!mechanics.isNullOrEmpty()) {
                     Result.success(mechanics.first())
                 } else {
-                    Result.failure(Exception("Mechanic not found"))
+                    Result.failure(
+                        Exception("HTTP Error: ${response.code()} ${response.message()}")
+                    )
                 }
             } else {
                 Result.failure(Exception("HTTP Error: ${response.code()}"))
